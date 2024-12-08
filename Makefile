@@ -6,9 +6,9 @@ SOURCES = parse_xml.c
 all: $(TARGET)
 
 $(TARGET): $(SOURCES)
-    $(CC) $(CFLAGS) -o $(TARGET) $(SOURCES)
+	$(CC) $(CFLAGS) -o $(TARGET) $(SOURCES)
 
 clean:
-    rm -f $(TARGET)
+	rm -f $(TARGET)
 
 
