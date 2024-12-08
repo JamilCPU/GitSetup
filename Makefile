@@ -1,6 +1,7 @@
 CC = gcc
 CFLAGS = -Wall -I"C:\cygwin64\usr\include\libxml2"TARGET = parse_xml
 SOURCES = parse_xml.c
+TARGET = parse_xml
 
 all: $(TARGET)
 
