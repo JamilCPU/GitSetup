@@ -1,7 +1,5 @@
 CC = gcc
-CFLAGS = -Wall -I"C:\cygwin64\usr\include\libxml2"
-LDFLAGS = -L"C:\cygwin64\lib" -lxml2 -lz -liconv
-TARGET = parse_xml
+CFLAGS = -Wall -I"C:\cygwin64\usr\include\libxml2"TARGET = parse_xml
 SOURCES = parse_xml.c
 
 all: $(TARGET)
@@ -9,7 +7,7 @@ all: $(TARGET)
 build: all
 
 $(TARGET): $(SOURCES)
-	$(CC) $(CFLAGS) $(LDFLAGS) -o $(TARGET) $(SOURCES)
+	$(CC) $(CFLAGS) -o $(TARGET) $(SOURCES) -lxml2
 
 clean:
 	rm -f $(TARGET)
