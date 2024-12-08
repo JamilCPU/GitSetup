@@ -11,7 +11,7 @@ int main(int argc, char **argv) {
 
     xmlDoc *document = xmlReadFile(argv[1], NULL, 0);
     if (document == NULL) {
-        printf("Failed to parse XML file\n");
+        printf("Failed to parse XML file!\n");
         return 1;
     }
 
