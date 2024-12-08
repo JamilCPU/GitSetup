@@ -5,6 +5,8 @@ SOURCES = parse_xml.c
 
 all: $(TARGET)
 
+build: all
+
 $(TARGET): $(SOURCES)
 	$(CC) $(CFLAGS) -o $(TARGET) $(SOURCES)
 
